@@ -2,4 +2,15 @@ html
 	head
 		include template/head.pug
 	body
+		#fullPageContainer
+			.section
+				#posterParallax.posterWrap
+					.posterWrap__posterBg.layer(data-depth="0.3")
+					.posterWrap__posterBg.layer(data-depth="0.5")
+					#large-header.posterWrap__posterBgOverlay
+						canvas#demo-canvas
+					.posterWrap__posterArtist.layer(data-depth="0.8")
+					.posterWrap__posterNameArtistWrap.layer(data-depth="1")
+						p.posterWrap__posterNameArtist MIGOS
+			.section
 		include template/scripts.pug
