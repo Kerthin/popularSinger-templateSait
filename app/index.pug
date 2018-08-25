@@ -13,4 +13,18 @@ html
 					.posterWrap__posterNameArtistWrap.layer(data-depth="1")
 						p.posterWrap__posterNameArtist MIGOS
 			.section
+				.newsGridWrap
+					mixin newsCellWrapMix(nameBgCellMix, titleCellMix, paragraphCellMix)
+						figure.newsGridWrap__cell
+							div(class=`newsGridWrap__img newsGridWrap__img_bg-${nameBgMix}`)
+							figcaption.newsGridWrap__contentWrap
+								article.newsGridWrap__contentBox
+									h2.newsGridWrap__title= titleCellMix
+									p.newsGridWrap__paragraph= paragraphCellMix
+					+newsCellWrapMix('1', 'CULTURE II', 'Lily likes to play with crayons and pencils')
+					+newsCellWrapMix('2', 'MIGOS', 'Lily likes to play with crayons and pencils')
+					+newsCellWrapMix('3', 'NEW VIDEO', 'Lily likes to play with crayons and pencils')
+					+newsCellWrapMix('4', 'TOP NEWS', 'Lily likes to play with crayons and pencils')
+					+newsCellWrapMix('5', 'OFFSET T-SHIRT', 'Lily likes to play with crayons and pencils')
+					+newsCellWrapMix('6', 'MIGOS QUAVO', 'Lily likes to play with crayons and pencils')
 		include template/scripts.pug
