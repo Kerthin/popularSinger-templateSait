@@ -22,3 +22,18 @@
 	TweenLite.min.js
 ********************/
 //= partials/libs/TweenLite.min.js
+
+/********************
+	Cobweb.js
+********************/
+//= partials/cobweb.js
+
+/********************
+	parallaxInitialization.js
+********************/
+//= partials/parallaxInitialization.js
+
+/********************
+	fullPajeInitialization.js
+********************/
+//= partials/fullPajeInitialization.js
