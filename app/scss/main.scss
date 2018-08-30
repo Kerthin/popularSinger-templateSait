@@ -8,6 +8,9 @@
 	font-family: FARRAY;
 	src: url("../fonts/FARRAY.otf") format("opentype");
 }
+::-webkit-scrollbar {
+	width: 0;
+}
 .section {
 	&:nth-of-type(1) {
 		@import 'partials/paralaxSectionStyle.scss';
