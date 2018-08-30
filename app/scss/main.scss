@@ -1,5 +1,13 @@
 @import '../../bower_components/reset.scss/reset.scss';
 @import 'partials/libs/fullpage.min.scss';
+@font-face {
+	font-family: Anurati-Regular;
+	src: url("../fonts/Anurati-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: FARRAY;
+	src: url("../fonts/FARRAY.otf") format("opentype");
+}
 .section {
 	&:nth-of-type(1) {
 		.posterWrap {

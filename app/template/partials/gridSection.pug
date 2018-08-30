@@ -1,0 +1,15 @@
+.section
+	.newsGridWrap
+		mixin newsCellWrapMix(nameBgCellMix, titleCellMix, paragraphCellMix)
+			figure.newsGridWrap__cell
+				div(class=`newsGridWrap__img newsGridWrap__img_bg-${nameBgCellMix}`)
+				figcaption.newsGridWrap__contentWrap
+					article.newsGridWrap__contentBox
+						h2.newsGridWrap__title= titleCellMix
+						p.newsGridWrap__paragraph= paragraphCellMix
+		+newsCellWrapMix('1', 'CULTURE II', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')
+		+newsCellWrapMix('2', 'MIGOS', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')
+		+newsCellWrapMix('3', 'NEW VIDEO', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')
+		+newsCellWrapMix('4', 'TOP NEWS', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')
+		+newsCellWrapMix('5', 'OFFSET T-SHIRT', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')
+		+newsCellWrapMix('6', 'MIGOS QUAVO', 'Lorem ipsum dolor sit amet, consectetur adipisicing.')
